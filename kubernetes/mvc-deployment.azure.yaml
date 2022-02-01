@@ -15,9 +15,10 @@ spec:
       containers:
       - name: mvc
         # image: demoaks0acr.azurecr.io/web-app:1.3
-        image: houssemdocker/webapp:111
+        # image: houssemdocker/webapp:111
         # image: ACR_NAME/DOCKER_IMAGE:TAG
         # image: __ACR_NAME__.azurecr.io/__DOCKER_IMAGE__:__TAG__
+        image: tahsib/product-store-mvc:v2.#{Build.BuildId}#
         ports:
         - containerPort: 80
         resources:
